@@ -1,0 +1,104 @@
+@font-face {
+    font-family: diamondGirl;
+    src: url("../images/diamondGirl.ttf");
+}
+
+@font-face {
+    font-family: blueberryRegular;
+    src: url("../images/blueberryRegular.otf");
+  }
+
+body {
+    background-image: url("../images/pastel.jpg");
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#screen {
+    overflow: auto;
+}
+
+
+h1 {
+    font-family: diamondGirl;
+    font-size: 78px;
+    font-weight: normal;
+    color: rgb(161, 123, 26);
+}
+
+h2, h3, h4, h5 {
+    font-family: blueberryRegular;
+    font-weight: bolder;
+    color: rgb(161, 123, 26);
+}
+
+.jumbotron {
+    background-color: transparent; 
+    border-style: dotted; 
+    border-width: 15px; 
+    border-color: rgb(161, 123, 26);
+    font-family: diamondGirl;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.card-header {
+    background-color: rgb(255, 241, 241);
+}
+
+.card-body {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#random-number {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(161, 123, 26);
+    background-color: transparent;
+}
+
+#user-score {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(161, 123, 26);
+    background-color: transparent;
+}
+
+#win-count {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(161, 123, 26);
+    background-color: transparent;
+}
+
+#loss-count {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(161, 123, 26);
+    background-color: transparent;
+}
+
+footer {
+    background-color: white;
+    color: rgb(161, 123, 26);
+    font-weight: bold;
+    font-size: large;
+    width: max-content;
+   float: right;
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crystal Collector Game</title>
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>  
+
+</head>
+
+<body>
+
+    <!-- Content Box -->
+    <div class="container">
+
+    <!-- Title -->
+        <div class="jumbotron">
+            <div class="Heading">
+                <h1 class="text-center">+* cRYStAL cOLLEctOR *+</h1>
+            </div>
+        </div>
+
+
+        <!-- Game Instructions -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>How To Play</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>You will be dealt a random number at the start of the game. Your goal is to match that
+                            number- without going over!</p>
+
+                        <p>By clicking on one of the four crystals below, you will add a specific number of points to
+                            your score.
+                            You will not know the value of each crystal until it is clicked.
+                            Each time the game is restarted, the values of each crystal will change.</p>
+
+                        <p>To win the game, your total score must match the random number you were dealt. You
+                            automatically lose the game if
+                            your score goes above the random number! </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cards Row -->
+        <div class="row">
+
+            <!-- Random Number -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Random #:</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="random-number"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Score -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Your Score:</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="user-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wins -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Wins:</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="win-count">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Losses -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Losses:</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="loss-count">0</h3>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Crystals -->
+            <div class="col-md-12">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Crystal Selection</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/images/pinkgem.png" id="pinkgem">
+                        <img src="assets/images/goldgem.png" id="goldgem">
+                        <img src="assets/images/purplegem.png" id="purplegem">
+                        <img src="assets/images/whitegem.png" id="whitegem">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            Made with love by Katie Mills &#x2661
+        </footer>
+</body> 
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>   
+
+</html>
